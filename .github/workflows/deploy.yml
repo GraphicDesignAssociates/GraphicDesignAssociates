@@ -21,6 +21,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Configure Node.js environment
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
@@ -28,10 +29,16 @@ jobs:
         with:
           node-version: 24.2.0
           cache: 'npm'
+      
+      #  Install dependencies
       - name: Install dependencies
         run: npm install --force
+
+      # Build the project
       - name: Build
         run: npm run build
+
+      # Deploy to GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
