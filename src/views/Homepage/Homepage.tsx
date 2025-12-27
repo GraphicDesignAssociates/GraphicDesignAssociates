@@ -61,37 +61,37 @@ const Homepage = (): JSX.Element => {
 
     const cardBlocks = [
       new CardBlock(
-        './assets/homepage/Dr Nool.jpg',
+        '/assets/homepage/Dr Nool.jpg',
         'Ads',
         '',
         window.location.origin + '/portfolio-ads',
       ),
       new CardBlock(
-        './assets/homepage/brochure-header.jpg',
+        '/assets/homepage/brochure-header.jpg',
         'Brochures',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-brochures',
       ),
       new CardBlock(
-        './assets/homepage/logos-header.jpg',
+        '/assets/homepage/logos-header.jpg',
         'Logos',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-logos',
       ),
       new CardBlock(
-        './assets/homepage/tech-ill-header.jpg',
+        '/assets/homepage/tech-ill-header.jpg',
         'Technical Illustrations',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-technical-illustrations',
       ),
       new CardBlock(
-        './assets/homepage/testemonial-header.jpg',
+        '/assets/homepage/testemonial-header.jpg',
         'Testimonials',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-testimonials',
       ),
       new CardBlock(
-        './assets/homepage/pub-annual-header.jpg',
+        '/assets/homepage/pub-annual-header.jpg',
         'Publications / Annual Reports',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-publications',
