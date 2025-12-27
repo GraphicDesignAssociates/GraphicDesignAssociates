@@ -5,7 +5,6 @@ const path = require('path');
 
 export default defineConfig({
   plugins: [react(),],
-  base: '/GraphicDesignAssociates/',
   server: {
     port: 3000, // Use the same port as CRA (optional)
   },
