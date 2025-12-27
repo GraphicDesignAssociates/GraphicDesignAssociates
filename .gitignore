@@ -35,3 +35,11 @@ yarn-error.log*
 
 .eslintcache
 .vscode
+
+# Remove build output
+dist
+
+# Remove packaged dependencies
+package-lock.json
+yarn.lock
+node_modules/
