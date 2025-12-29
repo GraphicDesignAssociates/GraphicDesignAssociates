@@ -5,7 +5,7 @@ const path = require('path');
 
 export default defineConfig({
   plugins: [react(),],
-  base: '/GraphicDesignAssociates/',  // Update to match Github repository name
+  base: './',  // Use relative paths for assets
   server: {
     port: 3000, // Use the same port as CRA (optional)
   },
