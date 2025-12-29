@@ -37,7 +37,7 @@ yarn-error.log*
 .vscode
 
 # Remove build output
-dist
+# dist
 
 # Remove packaged dependencies
 package-lock.json
