@@ -30,9 +30,11 @@ jobs:
           node-version: 24.2.0
           cache: 'npm'
       
-      #  Install dependencies
+      #  Install dependencies (clean install to handle cross-platform native modules)
       - name: Install dependencies
-        run: npm install --force
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
 
       # Build the project
       - name: Build
