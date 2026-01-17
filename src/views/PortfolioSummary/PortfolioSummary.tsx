@@ -7,40 +7,41 @@ import Container from 'components/Container';
 import { Hero, Partners } from './components';
 import { CardBlock } from 'views/PortfolioGrid/components/Main/Main';
 import { Main as MainSection } from 'views/PortfolioGrid/components';
+import { assetPath } from 'src/utils/assetPath';
 
 const cardBlocks = [
       new CardBlock(
-        '/assets/homepage/Dr Nool.jpg',
+        assetPath('assets/homepage/Dr Nool.jpg'),
         'Ads',
         '',
         window.location.origin + '/portfolio-ads',
       ),
       new CardBlock(
-        '/assets/homepage/brochure-header.jpg',
+        assetPath('assets/homepage/brochure-header.jpg'),
         'Brochures',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-brochures',
       ),
       new CardBlock(
-        '/assets/homepage/logos-header.jpg',
+        assetPath('assets/homepage/logos-header.jpg'),
         'Logos',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-logos',
       ),
       new CardBlock(
-        '/assets/homepage/tech-ill-header.jpg',
+        assetPath('assets/homepage/tech-ill-header.jpg'),
         'Technical Illustrations',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-technical-illustrations',
       ),
       new CardBlock(
-        '/assets/homepage/testemonial-header.jpg',
+        assetPath('assets/homepage/testemonial-header.jpg'),
         'Testimonials',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-testimonials',
       ),
       new CardBlock(
-        '/assets/homepage/pub-annual-header.jpg',
+        assetPath('assets/homepage/pub-annual-header.jpg'),
         'Publications / Annual Reports',
         'A beautiful view of the mountains during sunset.',
         window.location.origin + '/portfolio-publications',

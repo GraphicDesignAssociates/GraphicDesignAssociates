@@ -14,15 +14,15 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      src: path.resolve('/src/'),
-      blocks: "/src/blocks",
-      components: "/src/components",
-      demos: "/src/demos",
-      docs: "/src/docs",
-      layouts: "/src/layouts",
-      svg: "/src/svg",
-      theme: "/src/theme",
-      views: "/src/views",
+      src: path.resolve(__dirname, 'src'),
+      blocks: path.resolve(__dirname, 'src/blocks'),
+      components: path.resolve(__dirname, 'src/components'),
+      demos: path.resolve(__dirname, 'src/demos'),
+      docs: path.resolve(__dirname, 'src/docs'),
+      layouts: path.resolve(__dirname, 'src/layouts'),
+      svg: path.resolve(__dirname, 'src/svg'),
+      theme: path.resolve(__dirname, 'src/theme'),
+      views: path.resolve(__dirname, 'src/views'),
     },
   }
 });
