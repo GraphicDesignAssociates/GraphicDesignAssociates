@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 
 import NavItem from './components/NavItem';
 import { SingleNavItem } from 'layouts/Main/components/Topbar/components';
+import { assetPath } from 'src/utils/assetPath';
 
 interface Props {
   pages: {
@@ -29,18 +31,18 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
       <Box width={1} paddingX={2} paddingY={1}>
         <Box
           display={'flex'}
-          component="a"
-          href="/"
+          component={RouterLink}
+          to="/"
           title="gdassociates"
           width={{ xs: 200, md: 240 }}
         >
           <Box
             component={'img'}
-            src={
+            src={assetPath(
               mode === 'light'
                   ? 'assets/gda_logo.svg'
                   : 'assets/gda_logo_white.svg'
-            }
+            )}
             height={1}
             width={1}
           />
@@ -68,8 +70,8 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
             variant="contained"
             color="primary"
             fullWidth
-            component="a"
-            href="./About#Contact"
+            component={RouterLink}
+            to="/About#Contact"
           >
             Contact
           </Button>

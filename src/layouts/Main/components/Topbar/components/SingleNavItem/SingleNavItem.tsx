@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import { alpha, useTheme } from '@mui/material/styles';
 import Menu from '@mui/material/Menu';
@@ -65,10 +66,11 @@ const SingleNavItem = ({
         onClick={handleClick}
       >
         <Link
-          href={item.href}
+          component={RouterLink}
+          to={item.href}
           underline="none"
           color={linkColor}>
-          <Typography 
+          <Typography
             color={linkColor}>
             {item.title}
           </Typography>

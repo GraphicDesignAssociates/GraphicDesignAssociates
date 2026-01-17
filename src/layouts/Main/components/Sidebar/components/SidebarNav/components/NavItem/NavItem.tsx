@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { alpha, useTheme } from '@mui/material/styles';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -49,8 +50,8 @@ const NavItem = ({ title, items }: Props): JSX.Element => {
               <Grid item key={i} xs={12}>
                 <Button
                   size={'large'}
-                  component={'a'}
-                  href={p.href}
+                  component={RouterLink}
+                  to={p.href}
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',

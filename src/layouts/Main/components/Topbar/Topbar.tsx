@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
@@ -6,6 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import { NavItem, SingleNavItem } from './components';
 import ThemeModeToggler from 'components/ThemeModeToggler';
+import { assetPath } from 'src/utils/assetPath';
 
 interface Props {
   // eslint-disable-next-line @typescript-eslint/ban-types
@@ -40,18 +42,18 @@ const Topbar = ({
     >
       <Box
         display={'flex'}
-        component="a"
-        href="/"
+        component={RouterLink}
+        to="/"
         title="gdassociates"
         width={{ xs: 200, md: 240 }}
       >
         <Box
           component={'img'}
-          src={
+          src={assetPath(
             mode === 'light' && !colorInvert
               ? 'assets/gda_logo.svg'
               : 'assets/gda_logo_white.svg'
-          }
+          )}
           height={1}
           width={1}
         />
@@ -88,8 +90,8 @@ const Topbar = ({
           <Button
             variant="contained"
             color="primary"
-            component="a"
-            href="./About#Contact"
+            component={RouterLink}
+            to="/About#Contact"
             size="large"
           >
             Contact

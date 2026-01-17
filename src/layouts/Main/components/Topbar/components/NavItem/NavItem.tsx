@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import { alpha, useTheme } from '@mui/material/styles';
 import Menu from '@mui/material/Menu';
@@ -119,8 +120,8 @@ const NavItem = ({
           {items.map((p, i) => (
             <Grid item key={i} xs={items.length > 12 ? 6 : 12}>
               <MenuItem
-                component={'a'}
-                href={p.href}
+                component={RouterLink}
+                to={p.href}
                 sx={{
                   paddingY: 1.5,
                   borderRadius: 1,
