@@ -15,9 +15,7 @@
     "clear-all": "rimraf ./build ./node_modules"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
+    "extends": []
   },
   "browserslist": {
     "production": [
@@ -46,7 +44,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
-    "react-scripts": "^5.0.1",
     "react-slick": "^0.30.2",
     "react-syntax-highlighter": "^15.5.0",
     "slick-carousel": "^1.8.1",
