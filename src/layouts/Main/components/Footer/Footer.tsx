@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import { assetPath } from 'src/utils/assetPath';
 
 const Footer = (): JSX.Element => {
   const theme = useTheme();
@@ -22,19 +24,19 @@ const Footer = (): JSX.Element => {
         >
           <Box
             display={'flex'}
-            component="a"
-            href="/"
+            component={RouterLink}
+            to="/"
             title="Design Associates"
             width={{ xs: 150, md: 220 }}
-            
+
           >
             <Box
               component={'img'}
-              src={
+              src={assetPath(
                 mode === 'light'
                   ? 'assets/gda_logo.svg'
                   : 'assets/gda_logo_white.svg'
-              }
+              )}
               height={1}
               width={1}
             />

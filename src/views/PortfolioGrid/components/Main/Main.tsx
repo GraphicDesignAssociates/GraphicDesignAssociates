@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -48,8 +49,8 @@ const Main = ({ cardBlocks = [] }: MainProps): React.ReactElement => {
         {cardBlocksToUse.map((item: CardBlock, i) => (
           <Grid item xs={12} sm={6} md={4} key={i}>
             <Box
-              component={'a'}
-              href={item.link}
+              component={RouterLink}
+              to={item.link}
               display={'block'}
               width={1}
               height={1}
@@ -91,7 +92,8 @@ const Main = ({ cardBlocks = [] }: MainProps): React.ReactElement => {
                 <Box component={CardActions} justifyContent={'flex-start'}>
                   <Button
                     size="large"
-                    href={item.link}
+                    component={RouterLink}
+                    to={item.link}
                     endIcon={
                       <svg
                         width={16}
