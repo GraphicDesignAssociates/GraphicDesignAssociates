@@ -24,8 +24,7 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          GDA focuses creative vision with technical mastery, delivering graphic design services that elevate brands in competitive markets. Exceptional attention to detail distinguishes our handling of visual identity and high-impact assets.
         </Typography>
       </Box>
     </Box>
