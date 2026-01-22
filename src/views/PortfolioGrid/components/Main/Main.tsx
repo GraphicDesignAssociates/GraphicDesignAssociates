@@ -31,9 +31,6 @@ interface MainProps {
 const Main = ({ cardBlocks = [] }: MainProps): React.ReactElement => {
   const theme = useTheme();
   const cardBlocksToUse = cardBlocks?.length ? cardBlocks : [];
-  // Debug: log received card blocks to help trace missing data
-  // eslint-disable-next-line no-console
-  console.debug('Main: received cardBlocks count=', cardBlocksToUse.length, cardBlocksToUse);
 
   // Handle the case where there are no cards to display
   const noCards = cardBlocksToUse.length < 1;
@@ -43,80 +40,102 @@ const Main = ({ cardBlocks = [] }: MainProps): React.ReactElement => {
     </Typography>;
   }
 
+  // Determine if link is an asset (file) vs an internal route
+  const isAssetLink = (link: string): boolean => {
+    return link.includes('/assets/') || /\.(pdf|jpg|jpeg|png|gif|svg)$/i.test(link);
+  };
+
+  const cardStyles = {
+    textDecoration: 'none',
+    transition: 'all .2s ease-in-out',
+    '&:hover': {
+      transform: `translateY(-${theme.spacing(1 / 2)})`,
+    },
+  };
+
+  const viewButtonIcon = (
+    <svg
+      width={16}
+      height={16}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  );
+
+  const renderCardContent = (item: CardBlock) => (
+    <Box
+      component={Card}
+      width={1}
+      height={1}
+      display={'flex'}
+      flexDirection={'column'}
+    >
+      <CardMedia
+        image={item.image}
+        title={item.title}
+        sx={{
+          height: { xs: 340, md: 400 },
+        }}
+      />
+      <Box component={CardContent}>
+        <Typography variant={'h6'} fontWeight={700} gutterBottom>
+          {item.title}
+        </Typography>
+        {item.description && item.description.length
+          ? <Typography variant={'body2'} color="text.secondary">
+            {item.description}
+          </Typography>
+          : ''
+        }
+      </Box>
+      <Box flexGrow={1} />
+      <Box component={CardActions} justifyContent={'flex-start'}>
+        <Button size="large" endIcon={viewButtonIcon}>
+          View
+        </Button>
+      </Box>
+    </Box>
+  );
+
   return (
     <Box>
       <Grid container spacing={4}>
         {cardBlocksToUse.map((item: CardBlock, i) => (
           <Grid item xs={12} sm={6} md={4} key={i}>
-            <Box
-              component={RouterLink}
-              to={item.link}
-              display={'block'}
-              width={1}
-              height={1}
-              sx={{
-                textDecoration: 'none',
-                transition: 'all .2s ease-in-out',
-                '&:hover': {
-                  transform: `translateY(-${theme.spacing(1 / 2)})`,
-                },
-              }}
-            >
+            {isAssetLink(item.link) ? (
               <Box
-                component={Card}
+                component="a"
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                display={'block'}
                 width={1}
                 height={1}
-                display={'flex'}
-                flexDirection={'column'}
+                sx={cardStyles}
               >
-                <CardMedia
-                  image={item.image}
-                  title={item.title}
-                  sx={{
-                    height: { xs: 340, md: 400 },
-                  }}
-                />
-                <Box component={CardContent}>
-                  <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                    {item.title}
-                  </Typography>
-                  {item.description && item.description.length
-                    ? <Typography variant={'body2'} color="text.secondary">
-                      {item.description}
-                    </Typography>
-                    : ''
-                  }
-                  
-                </Box>
-                <Box flexGrow={1} />
-                <Box component={CardActions} justifyContent={'flex-start'}>
-                  <Button
-                    size="large"
-                    component={RouterLink}
-                    to={item.link}
-                    endIcon={
-                      <svg
-                        width={16}
-                        height={16}
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    }
-                  >
-                    View
-                  </Button>
-                </Box>
+                {renderCardContent(item)}
               </Box>
-            </Box>
+            ) : (
+              <Box
+                component={RouterLink}
+                to={item.link}
+                display={'block'}
+                width={1}
+                height={1}
+                sx={cardStyles}
+              >
+                {renderCardContent(item)}
+              </Box>
+            )}
           </Grid>
         ))}
       </Grid>
