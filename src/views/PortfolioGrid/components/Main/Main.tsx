@@ -83,7 +83,13 @@ const Main = ({ cardBlocks = [] }: MainProps): React.ReactElement => {
         image={item.image}
         title={item.title}
         sx={{
-          height: { xs: 340, md: 400 },
+          width: '100%',
+          aspectRatio: '4 / 3',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundOrigin: 'content-box',
+          padding: 2,
         }}
       />
       <Box component={CardContent}>
