@@ -23,6 +23,7 @@ const Hero = (): JSX.Element => {
           flexDirection={{ xs: 'column', md: 'row' }}
           position={'relative'}
           minHeight={{ xs: 'auto', md: 600 }}
+          maxHeight={{ xs: 'none', md: 600 }}
         >
           <Box
             width={1}
@@ -118,6 +119,7 @@ const Hero = (): JSX.Element => {
                       maxWidth={1}
                       sx={{
                         objectFit: 'cover',
+                        objectPosition: '50% 35%',
                         filter:
                           theme.palette.mode === 'dark'
                             ? 'brightness(0.8)'

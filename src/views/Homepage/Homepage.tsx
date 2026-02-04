@@ -140,9 +140,7 @@ const Homepage = (): JSX.Element => {
 
       {/* Introduction Block */}
       <Box>
-        <Container>
-          <Hero />
-        </Container>
+        <Hero />
       </Box>
       
       {/* Portfolio Preview Block */}
