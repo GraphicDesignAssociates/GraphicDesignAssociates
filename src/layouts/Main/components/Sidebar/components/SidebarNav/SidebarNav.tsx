@@ -2,10 +2,12 @@ import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
 
 import NavItem from './components/NavItem';
 import { SingleNavItem } from 'layouts/Main/components/Topbar/components';
+import ThemeModeToggler from 'components/ThemeModeToggler';
 import { assetPath } from 'src/utils/assetPath';
 
 interface Props {
@@ -27,7 +29,11 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
   } = pages;
 
   return (
-    <Box>
+    <Box
+      display={'flex'}
+      flexDirection={'column'}
+      height={'100%'}
+    >
       <Box width={1} paddingX={2} paddingY={1}>
         <Box
           display={'flex'}
@@ -50,13 +56,13 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <SingleNavItem 
+          <SingleNavItem
             id={homePage.title}
             item={homePage}
           />
         </Box>
         <Box marginTop={2}>
-          <SingleNavItem 
+          <SingleNavItem
             id={aboutPage.title}
             item={aboutPage}
           />
@@ -76,6 +82,23 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
             Contact
           </Button>
         </Box>
+      </Box>
+      <Box flexGrow={1} />
+      <Box
+        paddingX={2}
+        paddingY={2}
+        borderTop={`1px solid ${alpha(theme.palette.divider, 0.12)}`}
+        display={'flex'}
+        alignItems={'center'}
+        justifyContent={'space-between'}
+      >
+        <Typography
+          variant={'body2'}
+          color={'text.secondary'}
+        >
+          {mode === 'light' ? 'Light' : 'Dark'} mode
+        </Typography>
+        <ThemeModeToggler />
       </Box>
     </Box>
   );
