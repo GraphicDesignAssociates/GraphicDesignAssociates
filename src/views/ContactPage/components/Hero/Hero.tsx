@@ -3,69 +3,135 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+
+import Container from 'components/Container';
 
 const Hero = (): JSX.Element => {
   const theme = useTheme();
 
   return (
-    <Grid container spacing={4}>
-      <Grid item container alignItems={'center'} xs={12} md={6}>
-        <Box>
-          <Box marginBottom={2}>
-            <Typography
-              variant="h2"
-              color="text.primary"
-              sx={{
-                fontWeight: 700,
-              }}
-            >
-              Greg Sweet
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              variant="h6"
-              component="p"
-              color="text.secondary"
-              sx={{ fontWeight: 400 }}
-              lineHeight={1.6}
-            >
-              I am a graphic designer with a passion for creating designs that are both functional and aesthetically pleasing. 
-              With nearly 50 years of experience in the industry, 
-              l've worked with clients from a range of sectors, including automotive, healthcare, education and many more. 
-              My specialties include branding, technical illustration, and print design. 
-              I believe that good design is about more than just making things look pretty 
-              — it's about understanding the client's needs and delivering a solution that meets those needs effectively.
-            </Typography>
-          </Box>
-        </Box>
-      </Grid>
-      <Grid item xs={12} md={6}>
+    <Box
+      sx={{
+        width: 1,
+        height: 1,
+        overflow: 'hidden',
+      }}
+    >
+      <Container paddingX={0} paddingY={0} maxWidth={{ sm: 1, md: 1236 }}>
         <Box
-          height={1}
-          width={1}
           display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
+          flexDirection={{ xs: 'column', md: 'row' }}
+          position={'relative'}
+          minHeight={{ xs: 'auto', md: 600 }}
         >
-          <Box height={1} width={1} maxWidth={500} borderRadius={15} boxShadow={16} overflow={'hidden'}>
+          <Box
+            width={1}
+            order={{ xs: 2, md: 1 }}
+            display={'flex'}
+            alignItems={'center'}
+          >
+            <Container>
+              <Box>
+                <Box marginBottom={2}>
+                  <Typography
+                    variant="h2"
+                    color="text.primary"
+                    sx={{
+                      fontWeight: 700,
+                    }}
+                  >
+                    Greg Sweet
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography
+                    variant="h6"
+                    component="p"
+                    color="text.secondary"
+                    sx={{ fontWeight: 400 }}
+                    lineHeight={1.6}
+                  >
+                    I am a graphic designer with a passion for creating designs
+                    that are both functional and aesthetically pleasing. With
+                    nearly 50 years of experience in the industry, l've worked
+                    with clients from a range of sectors, including automotive,
+                    healthcare, education and many more. My specialties include
+                    branding, technical illustration, and print design. I believe
+                    that good design is about more than just making things look
+                    pretty — it's about understanding the client's needs and
+                    delivering a solution that meets those needs effectively.
+                  </Typography>
+                </Box>
+              </Box>
+            </Container>
+          </Box>
+          <Box
+            sx={{
+              flex: { xs: '0 0 100%', md: '0 0 50%' },
+              position: 'relative',
+              maxWidth: { xs: '100%', md: '50%' },
+              order: { xs: 1, md: 2 },
+            }}
+          >
             <Box
-              component={'img'}
-              src={
-                'assets/me.png'
-              }
-              width={1}
-              height={1}
               sx={{
-                filter:
-                  theme.palette.mode === 'dark' ? 'brightness(0.8)' : 'none',
+                width: { xs: 1, md: '50vw' },
+                height: '100%',
+                position: 'relative',
               }}
-            />
+            >
+              <Box
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  overflow: 'hidden',
+                }}
+              >
+                <Box
+                  sx={{
+                    overflow: 'hidden',
+                    left: '0%',
+                    width: 1,
+                    height: 1,
+                    position: { xs: 'relative', md: 'absolute' },
+                    clipPath: {
+                      xs: 'none',
+                      md: 'polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)',
+                    },
+                    shapeOutside: {
+                      xs: 'none',
+                      md: 'polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)',
+                    },
+                  }}
+                >
+                  <Box
+                    sx={{
+                      height: { xs: 'auto', md: 1 },
+                    }}
+                  >
+                    <Box
+                      component={'img'}
+                      src={'assets/me.png'}
+                      height={{ xs: 'auto', md: 1 }}
+                      maxHeight={{ xs: 300, md: 1 }}
+                      width={1}
+                      maxWidth={1}
+                      sx={{
+                        objectFit: 'cover',
+                        filter:
+                          theme.palette.mode === 'dark'
+                            ? 'brightness(0.8)'
+                            : 'none',
+                      }}
+                    />
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Box>
-      </Grid>
-    </Grid>
+      </Container>
+    </Box>
   );
 };
 

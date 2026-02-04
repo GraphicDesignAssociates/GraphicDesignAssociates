@@ -6,7 +6,8 @@
       "Bash(gh api:*)",
       "Bash(git checkout:*)",
       "Bash(git stash:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebFetch(domain:www.figma.com)"
     ]
   }
 }

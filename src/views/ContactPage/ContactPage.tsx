@@ -3,7 +3,6 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
-import Container from 'components/Container';
 import { Contact, Form, Hero } from './components';
 
 const ContactPage = (): JSX.Element => {
@@ -20,9 +19,7 @@ const ContactPage = (): JSX.Element => {
           paddingTop: 13,
         }}
       >
-        <Container>
-          <Hero />
-        </Container>
+        <Hero />
       </Box>
       <Contact />
     </Main>
