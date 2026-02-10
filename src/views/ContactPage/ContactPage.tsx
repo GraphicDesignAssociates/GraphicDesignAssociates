@@ -21,7 +21,6 @@ const ContactPage = (): JSX.Element => {
       >
         <Hero />
       </Box>
-      <Contact />
     </Main>
   );
 };
