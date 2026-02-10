@@ -24,8 +24,8 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          Effective testimonials can be a powerful tool for building trust and credibility with potential customers. 
+          They provide social proof that your product or service is valuable and can help to increase conversions. 
         </Typography>
       </Box>
     </Box>

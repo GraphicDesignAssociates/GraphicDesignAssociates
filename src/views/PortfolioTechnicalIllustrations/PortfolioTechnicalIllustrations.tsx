@@ -12,57 +12,57 @@ import { assetPath } from 'src/utils/assetPath';
 const cardBlocks = [
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-1.jpg'),
-        'Technical Illustration 1',
+        'Mopar Dealer After-Market Dealer Installation Instructions',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-1.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-1.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-2.jpg'),
-        'Technical Illustration 2',
+        'Ford Dealer After-Market Dealer Installation Instructions',
         '',
         assetPath('assets/tech-illustrations/tech-illustration-2.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-3.jpg'),
-        'Technical Illustration 3',
+        'Ford Dealer After-Market Dealer Installation Instructions',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-3.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-3.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-4.jpg'),
-        'Technical Illustration 4',
+        'Ford Manual Illustrations',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-4.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-4.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-5.jpg'),
-        'Technical Illustration 5',
+        'Ford Manual Illustrations',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-5.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-5.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-6.jpg'),
-        'Technical Illustration 6',
+        'Porcelain Insulator Cap',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-6.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-6.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-7.jpg'),
-        'Technical Illustration 7',
+        'Kenmore Vaccum Cleaner',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-7.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-7.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-8.jpg'),
-        'Technical Illustration 8',
+        'Panasonic Vaccum Cleaner',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-8.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-8.pdf')
       ),
       new CardBlock(
         assetPath('assets/tech-illustrations/card-headers/tech-illustration-9.jpg'),
-        'Technical Illustration 9',
+        'Ford Bezel Modification',
         '',
-        assetPath('assets/tech-illustrations/tech-illustration-9.jpg')
+        assetPath('assets/tech-illustrations/tech-illustration-9.pdf')
       ),
     ];
 
