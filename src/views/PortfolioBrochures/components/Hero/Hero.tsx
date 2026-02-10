@@ -24,8 +24,9 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          Brochures serve to inform, engage, and persuade potential customers about products, services, or events.
+          They act as marketing tools for brand awareness and sales support.
+          We understand the importance of creating brochures that not only look visually appealing but also effectively communicate the intended message to the target audience.
         </Typography>
       </Box>
     </Box>

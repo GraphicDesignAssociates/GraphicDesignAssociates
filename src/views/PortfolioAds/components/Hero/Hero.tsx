@@ -24,8 +24,7 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          An ad can stem from a marketing need for a graphic remedy to a current situation or a notice of an upcoming event.
         </Typography>
       </Box>
     </Box>
