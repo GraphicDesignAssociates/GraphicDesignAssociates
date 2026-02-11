@@ -12,7 +12,7 @@ import { assetPath } from 'src/utils/assetPath';
 const cardBlocks = [
       new CardBlock(
         assetPath('assets/brochures/card-headers/brochure-1.jpg'),
-        'Kenneland Health Education Center Annex',
+        'Keeneland Health Education Center Annex',
         '',
         assetPath('assets/brochures/brochure-1.pdf'),
       ),

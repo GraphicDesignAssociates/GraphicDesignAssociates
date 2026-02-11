@@ -25,7 +25,7 @@ const cardBlocks = [
       new CardBlock(
         assetPath('assets/ads/card-headers/ad-3.jpg'),
         'National Doctor\'s Day',
-        'Created for national doctor\'s day, this ad was designed to celebrate the hard work and dedication of doctors within our healthcare system.',
+        'Created for National Doctor\'s day, this ad was designed to celebrate the hard work and dedication of doctors within our healthcare system.',
         assetPath('assets/ads/ad-3.pdf')
       ),
       new CardBlock(
