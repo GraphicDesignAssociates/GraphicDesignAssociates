@@ -24,8 +24,8 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          Marketing campaigns are coordinated sets of activities and strategies designed to promote a product, service, or brand. 
+          Campaigns are often time-bound and may target specific audiences to drive awareness, and ultimately sales.
         </Typography>
       </Box>
     </Box>

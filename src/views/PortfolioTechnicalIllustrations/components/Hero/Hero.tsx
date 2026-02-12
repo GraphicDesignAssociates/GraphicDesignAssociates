@@ -24,8 +24,7 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          Create a realistic illustration of an actual object or product that shows its component parts by utilizing either an exploded view or cutaway view techique. Technical illustrations are often used in instruction manuals, assembly guides, and technical documentation to help users understand how a product is put together or how it functions.
         </Typography>
       </Box>
     </Box>

@@ -24,8 +24,8 @@ const Hero = (): JSX.Element => {
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          While a logo is a very personal representation of a company's identity, a logo is a graphic mark, emblem, or symbol used to aid and promote public identification and recognition.
+          We understand this and work closely with our clients to create logos that are not only visually appealing but also effectively communicate the essence of their brand.
         </Typography>
       </Box>
     </Box>
