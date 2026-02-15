@@ -47,7 +47,7 @@ const NavItem = ({
       if (!currentlyHovering) {
         handleClose();
       }
-    }, 50);
+    }, 300);
   };
 
   const [activeLink, setActiveLink] = useState('');
@@ -110,6 +110,16 @@ const NavItem = ({
             borderBottomRightRadius: 8,
             borderBottomLeftRadius: 8,
             borderTop: `3px solid ${theme.palette.primary.main}`,
+            overflow: 'visible',
+            '&::before': {
+              content: '""',
+              display: 'block',
+              position: 'absolute',
+              top: -16,
+              left: 0,
+              right: 0,
+              height: 16,
+            },
           },
           [`&.${popoverClasses.root}`]: {
             pointerEvents: 'none',
