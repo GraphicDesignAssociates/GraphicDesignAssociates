@@ -1,13 +1,10 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import { useTheme } from '@mui/material/styles';
-
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Hero } from './components';
 import { CardBlock } from 'views/PortfolioGrid/components/Main/Main';
 import { Main as MainSection } from 'views/PortfolioGrid/components';
-import { assetPath } from 'src/utils/assetPath';
+import { assetPath } from '../../utils/assetPath';
 
 const cardBlocks = [
       new CardBlock(
@@ -72,8 +69,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioAds = (): JSX.Element => {
-  const theme = useTheme();
+const PortfolioAds = (): React.JSX.Element => {
   return (
     <Main>
       <Container>
