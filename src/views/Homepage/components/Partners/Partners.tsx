@@ -97,7 +97,7 @@ const Partners = (): JSX.Element => {
       <Typography
         variant="caption"
         color="text.secondary"
-        sx={{ mt: 2, textAlign: 'center', px: 2 }}
+        sx={{ mt: 2, textAlign: 'center', px: 2, textWrap: 'balance' }}
       >
         Examples of current and past customers. Images not a work product of Graphic Design Associates.
       </Typography>

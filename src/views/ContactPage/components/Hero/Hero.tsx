@@ -63,8 +63,8 @@ const Hero = (): JSX.Element => {
           display={'flex'}
           flexDirection={{ xs: 'column', md: 'row' }}
           position={'relative'}
-          minHeight={{ xs: 'auto', md: 600 }}
-          maxHeight={{ xs: 'none', md: 600 }}
+          minHeight={{ xs: 'auto', md: 700 }}
+          maxHeight={{ xs: 'none', md: 700 }}
         >
           <Box
             width={1}
@@ -80,6 +80,7 @@ const Hero = (): JSX.Element => {
                     color="text.primary"
                     sx={{
                       fontWeight: 700,
+                      textWrap: 'balance',
                     }}
                   >
                     Greg Sweet
@@ -89,9 +90,14 @@ const Hero = (): JSX.Element => {
                   <Typography
                     variant="h6"
                     component="p"
-                    color="text.secondary"
-                    sx={{ fontWeight: 400 }}
-                    lineHeight={1.4}
+                    color="text.primary"
+                    sx={{
+                      fontWeight: 400,
+                      letterSpacing: '0.015em',
+                      lineHeight: 1.7,
+                      textWrap: 'pretty',
+                      opacity: 0.72,
+                    }}
                   >
                     I am a graphic designer with a passion for creating designs
                     that are both functional and aesthetically pleasing. With

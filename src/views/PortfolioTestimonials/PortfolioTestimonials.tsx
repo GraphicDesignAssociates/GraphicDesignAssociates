@@ -34,7 +34,7 @@ const PortfolioTestimonials = (): JSX.Element => {
   const theme = useTheme();
   return (
     <Main>
-      <Container>
+      <Container paddingY={0} paddingTop={{ xs: 4, sm: 6, md: 8 }}>
         <Hero />
       </Container>
       <Container>
