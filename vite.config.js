@@ -3,12 +3,16 @@ import react from '@vitejs/plugin-react';
 
 const path = require('path');
 
-// Use different base paths for local dev vs production (GitHub Pages)
-const isProduction = process.env.NODE_ENV === 'production';
+// Base path configuration:
+// - VITE_BASE_PATH env var controls the deployment base path
+// - Set to '/' for custom domain deployment (e.g. graphicdesignassociates.com)
+// - Set to '/GraphicDesignAssociates/' for GitHub Pages subdirectory deployment
+// - Defaults to '/' (custom domain / local dev)
+const basePath = process.env.VITE_BASE_PATH || '/';
 
 export default defineConfig({
   plugins: [react(),],
-  base: isProduction ? '/GraphicDesignAssociates/' : '/',  // Root for local dev, subdirectory for production
+  base: basePath,
   server: {
     port: 3000, // Use the same port as CRA (optional)
   },

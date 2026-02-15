@@ -37,8 +37,14 @@ jobs:
           npm install --legacy-peer-deps
 
       # Build the project
+      # VITE_BASE_PATH controls the deployment base path:
+      #   '/' = custom domain (e.g. graphicdesignassociates.com)
+      #   '/GraphicDesignAssociates/' = GitHub Pages subdirectory
+      # To switch back to subdirectory mode (used with Github pages without Custom DNS), just change VITE_BASE_PATH from '/' to '/GraphicDesignAssociates/'
       - name: Build
         run: npm run build
+        env:
+          VITE_BASE_PATH: '/'
 
       # Deploy to GitHub Pages
       - name: Setup Pages

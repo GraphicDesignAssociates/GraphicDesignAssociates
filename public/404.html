@@ -8,7 +8,11 @@
       // This script takes the current URL and converts the path and query
       // string into just a query string, and then redirects the browser
       // to the new URL with only a query string and hash fragment.
-      var pathSegmentsToKeep = 1;
+      //
+      // Auto-detect deployment mode:
+      // - GitHub Pages subdirectory (*.github.io/repo): keep 1 path segment
+      // - Custom domain (graphicdesignassociates.com): keep 0 path segments
+      var pathSegmentsToKeep = window.location.hostname.endsWith('.github.io') ? 1 : 0;
 
       var l = window.location;
       l.replace(
