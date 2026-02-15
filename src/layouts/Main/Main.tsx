@@ -46,7 +46,7 @@ const Main = ({
   });
 
   return (
-    <Box>
+    <Box display={'flex'} flexDirection={'column'} minHeight={'100vh'}>
       <AppBar
         position={'sticky'}
         sx={{
@@ -69,7 +69,7 @@ const Main = ({
         variant="temporary"
         pages={pages}
       />
-      <main>
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         {children}
         <Divider />
       </main>

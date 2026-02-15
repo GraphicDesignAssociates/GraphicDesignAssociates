@@ -3,20 +3,18 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
-import { Contact, Form, Hero } from './components';
+import { Hero } from './components';
 
-const ContactPage = (): JSX.Element => {
+const ContactPage = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (
     <Main>
       <Box
         sx={{
-          position: 'relative',
+          flex: 1,
           backgroundColor: theme.palette.alternate.main,
           backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
-          marginTop: -13,
-          paddingTop: 13,
         }}
       >
         <Hero />
