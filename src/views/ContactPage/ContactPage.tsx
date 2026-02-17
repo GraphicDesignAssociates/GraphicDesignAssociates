@@ -13,6 +13,8 @@ const ContactPage = (): React.JSX.Element => {
       <Box
         sx={{
           flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
           backgroundColor: theme.palette.alternate.main,
           backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
         }}

@@ -55,25 +55,29 @@ const Hero = (): React.JSX.Element => {
     <Box
       sx={{
         width: 1,
-        height: 1,
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column',
         overflow: 'hidden',
       }}
     >
-      <Container paddingX={0} paddingY={0} maxWidth={{ sm: 1, md: 1236 }}>
+      <Container paddingX={0} paddingY={0} maxWidth={{ sm: 1, md: 1236 }} flex={1} display="flex" flexDirection="column">
         <Box
           display={'flex'}
           flexDirection={{ xs: 'column', md: 'row' }}
           position={'relative'}
-          minHeight={{ xs: 'auto', md: 700 }}
-          maxHeight={{ xs: 'none', md: 700 }}
+          minHeight={{ xs: 'auto', md: 600 }}
+          flex={1}
         >
           <Box
             width={1}
             order={{ xs: 2, md: 1 }}
             display={'flex'}
-            alignItems={'center'}
+            flexDirection={'column'}
+            justifyContent={'center'}
+            flex={1}
           >
-            <Container>
+            <Container paddingY={{ xs: 4, md: 0 }}>
               <Box>
                 <Box marginBottom={2}>
                   <Typography
