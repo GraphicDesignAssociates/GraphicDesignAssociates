@@ -140,26 +140,39 @@ const Hero = (): React.JSX.Element => {
                           minWidth={'auto !important'}
                           marginRight={2}
                         >
-                          <Box
-                            component={Avatar}
-                            bgcolor={theme.palette.secondary.main}
-                            width={40}
-                            height={40}
+                          <Avatar
+                            {...(item.type === 'email' && {
+                              component: 'a',
+                              href: `mailto:${item.value}`,
+                            })}
+                            sx={{
+                              bgcolor: theme.palette.secondary.main,
+                              width: 40,
+                              height: 40,
+                              textDecoration: 'none',
+                              ...(item.type === 'email' && {
+                                cursor: 'pointer',
+                                '&:hover': { opacity: 0.8 },
+                              }),
+                            }}
                           >
                             {item.icon}
-                          </Box>
+                          </Avatar>
                         </Box>
                         <ListItemText
                           primary={item.label}
                           secondary={
-                            item.type == 'email' 
-                              ? <a 
-                                  href={`mailto:${item.value}`} 
-                                  style={{ color: theme.palette.text.primary }}>
-                                    {item.value}
-                                </a>
-                              : item.value
-                            }
+                            item.type == 'email' ? (
+                              <a
+                                href={`mailto:${item.value}`}
+                                style={{ color: theme.palette.text.primary }}
+                              >
+                                {item.value}
+                              </a>
+                            ) : (
+                              item.value
+                            )
+                          }
                         />
                       </Box>
                     ))}
