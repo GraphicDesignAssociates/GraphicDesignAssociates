@@ -191,7 +191,7 @@ const Hero = (): React.JSX.Element => {
           >
             <Box
               sx={{
-                width: { xs: 1, md: '50vw' },
+                width: 1,
                 height: '100%',
                 position: 'relative',
               }}
@@ -201,6 +201,14 @@ const Hero = (): React.JSX.Element => {
                   width: '100%',
                   height: '100%',
                   overflow: 'hidden',
+                  maskImage: {
+                    xs: 'none',
+                    md: 'linear-gradient(to right, black 75%, transparent)',
+                  },
+                  WebkitMaskImage: {
+                    xs: 'none',
+                    md: 'linear-gradient(to right, black 75%, transparent)',
+                  },
                 }}
               >
                 <Box
