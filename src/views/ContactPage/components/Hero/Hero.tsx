@@ -12,6 +12,7 @@ import Container from 'components/Container';
 const mock = [
   {
     label: 'Email',
+    type: 'email',
     value: 'sweetdesigns@twc.com',
     icon: (
       <svg
@@ -150,7 +151,11 @@ const Hero = (): React.JSX.Element => {
                         </Box>
                         <ListItemText
                           primary={item.label}
-                          secondary={item.value}
+                          secondary={
+                            item.type == 'email' 
+                              ? <a href={`mailto:${item.value}`}>{item.value}</a>
+                              : item.value
+                            }
                         />
                       </Box>
                     ))}
