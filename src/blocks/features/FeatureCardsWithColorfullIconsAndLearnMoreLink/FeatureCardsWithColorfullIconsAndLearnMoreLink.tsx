@@ -202,7 +202,7 @@ const mock = [
   },
 ];
 
-const FeatureCardsWithColorfullIconsAndLearnMoreLink = (): JSX.Element => {
+const FeatureCardsWithColorfullIconsAndLearnMoreLink = (): React.JSX.Element => {
   return (
     <Box bgcolor={'alternate.main'}>
       <Container>

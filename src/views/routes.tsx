@@ -17,47 +17,47 @@ const routes = [
   // Index route
   {
     path: '/',
-    renderer: (params = {}): JSX.Element => <HomepageView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <HomepageView {...params} />,
   },
 
   // Contact routes
   {
     path: '/about',
-    renderer: (params = {}): JSX.Element => <ContactPageView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ContactPageView {...params} />,
   },
 
   // Portfolio routes
   {
     path: '/portfolio-summary',
-    renderer: (params = {}): JSX.Element => <PortfolioSummaryView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioSummaryView {...params} />,
   },
   {
     path: '/portfolio-ads',
-    renderer: (params = {}): JSX.Element => <PortfolioAdsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioAdsView {...params} />,
   },
   {
     path: '/portfolio-logos',
-    renderer: (params = {}): JSX.Element => <PortfolioLogosView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioLogosView {...params} />,
   },
   {
     path: '/portfolio-brochures',
-    renderer: (params = {}): JSX.Element => <PortfolioBrochuresView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioBrochuresView {...params} />,
   },
   {
     path: '/portfolio-technical-illustrations',
-    renderer: (params = {}): JSX.Element => <PortfolioTechnicalIllustrationsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioTechnicalIllustrationsView {...params} />,
   },
   {
     path: '/portfolio-testimonials',
-    renderer: (params = {}): JSX.Element => <PortfolioTestimonialsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioTestimonialsView {...params} />,
   },
   {
     path: '/portfolio-publications',
-    renderer: (params = {}): JSX.Element => <PortfolioPublicationsReportsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioPublicationsReportsView {...params} />,
   },
   {
     path: '/campaigns',
-    renderer: (params = {}): JSX.Element => <PortfolioCampaigns {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PortfolioCampaigns {...params} />,
   },
   
 ];

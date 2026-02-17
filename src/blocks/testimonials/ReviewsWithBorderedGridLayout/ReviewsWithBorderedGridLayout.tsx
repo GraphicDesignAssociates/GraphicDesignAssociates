@@ -56,7 +56,7 @@ const mock = [
   },
 ];
 
-const ReviewsWithBorderedGridLayout = (): JSX.Element => {
+const ReviewsWithBorderedGridLayout = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

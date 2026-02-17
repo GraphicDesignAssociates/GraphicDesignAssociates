@@ -27,7 +27,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioGrid = (): JSX.Element => {
+const PortfolioGrid = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Main>

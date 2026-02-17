@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 
 import Container from 'components/Container';
 
-const ColorPicker = (): JSX.Element => {
+const ColorPicker = (): React.JSX.Element => {
   const theme = useTheme();
   const [color, setColor] = useState('blue');
 

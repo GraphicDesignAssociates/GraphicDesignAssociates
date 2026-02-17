@@ -7,7 +7,7 @@ import Card from '@mui/material/Card';
 
 import Container from 'components/Container';
 
-const WithActionButtons = (): JSX.Element => {
+const WithActionButtons = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box bgcolor="alternate.main">

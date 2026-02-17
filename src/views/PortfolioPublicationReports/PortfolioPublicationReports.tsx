@@ -72,7 +72,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioPublicationsReports = (): JSX.Element => {
+const PortfolioPublicationsReports = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Main>

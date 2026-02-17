@@ -15,45 +15,45 @@ import {
 const routes = [
   {
     path: '/blocks/testimonials',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <TestimonialsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/testimonials/with-large-image',
-    renderer: (params = {}): JSX.Element => <WithLargeImageView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithLargeImageView {...params} />,
   },
   {
     path: '/blocks/testimonials/with-highlighted-card',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithHighlightedCardView {...params} />
     ),
   },
   {
     path: '/blocks/testimonials/reviews-with-bordered-grid-layout',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ReviewsWithBorderedGridLayoutView {...params} />
     ),
   },
   {
     path: '/blocks/testimonials/with-company-logo',
-    renderer: (params = {}): JSX.Element => <WithCompanyLogoView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithCompanyLogoView {...params} />,
   },
   {
     path: '/blocks/testimonials/with-outlined-cards',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithOutlinedCardsView {...params} />
     ),
   },
   {
     path: '/blocks/testimonials/reviews-with-simple-boxes',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ReviewsWithSimpleBoxesView {...params} />
     ),
   },
   {
     path: '/blocks/testimonials/with-brand-bg-color',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithBrandBgColorView {...params} />
     ),
   },

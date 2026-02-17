@@ -9,7 +9,7 @@ import { useTheme } from '@mui/material/styles';
 
 import Container from 'components/Container';
 
-const Newsletter = (): JSX.Element => {
+const Newsletter = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

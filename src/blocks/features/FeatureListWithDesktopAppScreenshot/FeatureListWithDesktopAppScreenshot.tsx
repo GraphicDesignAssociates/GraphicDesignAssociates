@@ -81,7 +81,7 @@ const mock = [
   },
 ];
 
-const FeatureListWithDesktopAppScreenshot = (): JSX.Element => {
+const FeatureListWithDesktopAppScreenshot = (): React.JSX.Element => {
   const theme = useTheme();
 
   const LeftSide = () => (

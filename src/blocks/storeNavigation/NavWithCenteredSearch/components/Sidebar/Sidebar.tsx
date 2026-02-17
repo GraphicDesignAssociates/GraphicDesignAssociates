@@ -20,7 +20,7 @@ interface Props {
   variant: 'permanent' | 'persistent' | 'temporary' | undefined;
 }
 
-const Sidebar = ({ open, variant, onClose }: Props): JSX.Element => {
+const Sidebar = ({ open, variant, onClose }: Props): React.JSX.Element => {
   const theme = useTheme();
 
   return (

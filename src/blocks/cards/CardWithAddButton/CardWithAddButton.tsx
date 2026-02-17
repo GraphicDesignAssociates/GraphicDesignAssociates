@@ -29,7 +29,7 @@ export const mock = [
   },
 ];
 
-const CardWithAddButton = (): JSX.Element => {
+const CardWithAddButton = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box bgcolor={'alternate.main'}>

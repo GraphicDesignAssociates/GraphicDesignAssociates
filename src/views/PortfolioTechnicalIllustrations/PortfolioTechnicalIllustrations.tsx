@@ -66,7 +66,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioTechnicalIllustrations = (): JSX.Element => {
+const PortfolioTechnicalIllustrations = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Main>

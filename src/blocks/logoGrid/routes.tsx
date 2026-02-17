@@ -14,41 +14,41 @@ import {
 const routes = [
   {
     path: '/blocks/logo-grid',
-    renderer: (params = {}): JSX.Element => <LogoGridIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <LogoGridIndexView {...params} />,
   },
   {
     path: '/blocks/logo-grid/logo-grid-simple-centered',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <LogoGridSimpleCenteredView {...params} />
     ),
   },
   {
     path: '/blocks/logo-grid/logo-grid-with-boxed-logos',
-    renderer: (params = {}): JSX.Element => <WithBoxedLogosView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithBoxedLogosView {...params} />,
   },
   {
     path: '/blocks/logo-grid/logo-grid-with-left-aligned-description-box',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithLeftAlignedDescriptionBoxView {...params} />
     ),
   },
   {
     path: '/blocks/logo-grid/logo-grid-with-swiper-and-brand-background-color',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithSwiperAndBrandBackgroundColorView {...params} />
     ),
   },
   {
     path:
       '/blocks/logo-grid/logo-grid-with-left-aligned-description-box-and-boxed-logos',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithLeftAlignedDescriptionBoxAndBoxedLogosView {...params} />
     ),
   },
   {
     path:
       '/blocks/logo-grid/logo-grid-with-dark-background-and-simple-description-box',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithDarkBackgroundAndSimpleDescriptionBoxView {...params} />
     ),
   },

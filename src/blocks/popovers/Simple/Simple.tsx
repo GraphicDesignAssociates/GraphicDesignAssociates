@@ -35,7 +35,7 @@ const mock = [
   },
 ];
 
-const Simple = (): JSX.Element => {
+const Simple = (): React.JSX.Element => {
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const handleClick = (event): void => {

@@ -11,21 +11,21 @@ import {
 const routes = [
   {
     path: '/blocks/product-reviews',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ProductReviewsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/product-reviews/review-dialog',
-    renderer: (params = {}): JSX.Element => <ReviewDialogView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ReviewDialogView {...params} />,
   },
   {
     path: '/blocks/product-reviews/review-overview',
-    renderer: (params = {}): JSX.Element => <ReviewOverviewView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ReviewOverviewView {...params} />,
   },
   {
     path: '/blocks/product-reviews/review-quick-overview',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ReviewQuickOverviewView {...params} />
     ),
   },

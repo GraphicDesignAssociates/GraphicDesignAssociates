@@ -54,7 +54,7 @@ const mock = [
   },
 ];
 
-const WithPromoBadge = (): JSX.Element => {
+const WithPromoBadge = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

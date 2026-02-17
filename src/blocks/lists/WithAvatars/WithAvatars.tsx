@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 import Container from 'components/Container';
 
-const WithAvatars = (): JSX.Element => {
+const WithAvatars = (): React.JSX.Element => {
   return (
     <Box bgcolor={'alternate.main'}>
       <Container display={'flex'} justifyContent={'center'}>

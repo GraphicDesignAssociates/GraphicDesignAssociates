@@ -27,7 +27,7 @@ const mock = [
   },
 ];
 
-const WithDarkBackgroundAndSimpleDescriptionBox = (): JSX.Element => {
+const WithDarkBackgroundAndSimpleDescriptionBox = (): React.JSX.Element => {
   return (
     <Box bgcolor={'#11092d'}>
       <Container>

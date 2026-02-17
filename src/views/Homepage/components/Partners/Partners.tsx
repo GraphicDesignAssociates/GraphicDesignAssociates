@@ -50,7 +50,7 @@ const partners = [
   },
 ];
 
-const Partners = (): JSX.Element => {
+const Partners = (): React.JSX.Element => {
   const theme = useTheme();
   const isDarkMode = theme.palette.mode.toLowerCase() === 'dark';
 

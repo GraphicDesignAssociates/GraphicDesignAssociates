@@ -41,7 +41,7 @@ import storePopupsBlocksRoutes from 'blocks/storePopups/routes';
 const routes = [
   {
     path: '/blocks',
-    renderer: (params = {}): JSX.Element => <IndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <IndexView {...params} />,
   },
   ...heroBlocksRoutes,
   ...blogBlocksRoutes,

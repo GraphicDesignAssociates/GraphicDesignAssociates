@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 
-const Cover = (): JSX.Element => {
+const Cover = (): React.JSX.Element => {
   return (
     <Box
       sx={{

@@ -13,7 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 import Container from 'components/Container';
 
-const WithAvatarAndButtonsBelow = (): JSX.Element => {
+const WithAvatarAndButtonsBelow = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box bgcolor="alternate.main">

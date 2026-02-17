@@ -77,7 +77,7 @@ const mock = [
   },
 ];
 
-const SimpleCentered = (): JSX.Element => {
+const SimpleCentered = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

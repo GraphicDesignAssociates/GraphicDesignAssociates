@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Partners from '../Partners';
 
-const Welcome = (): JSX.Element => {
+const Welcome = (): React.JSX.Element => {
   const GridItemHeadlineBlock = () => (
     <Box marginBottom={4} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Typography

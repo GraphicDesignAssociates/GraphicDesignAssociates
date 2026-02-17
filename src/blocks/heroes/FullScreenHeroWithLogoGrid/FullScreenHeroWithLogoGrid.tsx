@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 
 import Container from 'components/Container';
 
-const FullScreenHeroWithLogoGrid = (): JSX.Element => {
+const FullScreenHeroWithLogoGrid = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box

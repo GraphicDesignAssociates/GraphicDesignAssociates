@@ -4,7 +4,7 @@ import viewsRoutes from 'views/routes';
 import blocksRoutes from 'blocks/routes';
 import demosRoutes from 'demos/routes';
 
-const Routes = (): JSX.Element => {
+const Routes = (): React.JSX.Element => {
   return (
     <ReactRoutes>
       {viewsRoutes.map((item, i) => (

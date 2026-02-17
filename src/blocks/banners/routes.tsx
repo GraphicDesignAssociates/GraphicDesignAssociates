@@ -10,17 +10,17 @@ import {
 const routes = [
   {
     path: '/blocks/banners',
-    renderer: (params = {}): JSX.Element => <BannerIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <BannerIndexView {...params} />,
   },
   {
     path: '/blocks/banners/mui-standard-snack-bars',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <MUIStandardSnackBarsView {...params} />
     ),
   },
   {
     path: '/blocks/banners/simple-snack-bar',
-    renderer: (params = {}): JSX.Element => <SimpleSnackBarView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <SimpleSnackBarView {...params} />,
   },
 ];
 

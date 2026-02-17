@@ -6,7 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 import Container from 'components/Container';
 
-const SimpleSnackBar = (): JSX.Element => {
+const SimpleSnackBar = (): React.JSX.Element => {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = (): void => {

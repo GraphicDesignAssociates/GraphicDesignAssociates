@@ -13,37 +13,37 @@ import {
 const routes = [
   {
     path: '/blocks/page-layouts',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <PageLayoutsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/page-layouts/with-fixed-sidebar',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithFixedSidebarView {...params} />
     ),
   },
   {
     path: '/blocks/page-layouts/with-three-columns',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithThreeColumnsView {...params} />
     ),
   },
   {
     path: '/blocks/page-layouts/with-toggled-sidebar',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithToggledSidebarView {...params} />
     ),
   },
   {
     path: '/blocks/page-layouts/with-fluid-layout-and-no-sidebar',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithFluidLayoutAndNoSidebarView {...params} />
     ),
   },
   {
     path: '/blocks/page-layouts/with-narrow-layout-and-no-sidebar',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithNarrowLayoutAndNoSidebarView {...params} />
     ),
   },

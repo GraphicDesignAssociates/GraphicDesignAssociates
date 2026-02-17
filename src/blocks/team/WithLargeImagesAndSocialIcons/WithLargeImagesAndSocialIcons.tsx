@@ -37,7 +37,7 @@ const mock = [
   },
 ];
 
-const WithLargeImagesAndSocialIcons = (): JSX.Element => {
+const WithLargeImagesAndSocialIcons = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

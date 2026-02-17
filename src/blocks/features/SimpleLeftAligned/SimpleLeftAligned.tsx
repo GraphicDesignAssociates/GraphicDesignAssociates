@@ -78,7 +78,7 @@ const mock = [
   },
 ];
 
-const SimpleLeftAligned = (): JSX.Element => {
+const SimpleLeftAligned = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

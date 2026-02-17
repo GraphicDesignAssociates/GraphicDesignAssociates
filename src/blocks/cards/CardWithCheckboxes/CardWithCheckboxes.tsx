@@ -11,7 +11,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 import Container from 'components/Container';
 
-const CardWithCheckboxes = (): JSX.Element => {
+const CardWithCheckboxes = (): React.JSX.Element => {
   return (
     <Box bgcolor={'alternate.main'}>
       <Container maxWidth={800}>

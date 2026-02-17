@@ -12,25 +12,25 @@ import {
 const routes = [
   {
     path: '/blocks/category-showcases',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <CategoryShowcasesIndexView {...params} />
     ),
   },
   {
     path: '/blocks/category-showcases/with-image-grid',
-    renderer: (params = {}): JSX.Element => <WithImageGridView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithImageGridView {...params} />,
   },
   {
     path: '/blocks/category-showcases/on-spanning-columns',
-    renderer: (params = {}): JSX.Element => <SpanningColumnsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <SpanningColumnsView {...params} />,
   },
   {
     path: '/blocks/category-showcases/showcase-grid',
-    renderer: (params = {}): JSX.Element => <ShowcaseGridView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ShowcaseGridView {...params} />,
   },
   {
     path: '/blocks/category-showcases/showcase-bg-image',
-    renderer: (params = {}): JSX.Element => <ShowcaseBgImageView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ShowcaseBgImageView {...params} />,
   },
 ];
 

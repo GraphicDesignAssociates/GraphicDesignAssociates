@@ -11,21 +11,21 @@ import {
 const routes = [
   {
     path: '/blocks/progress-steps',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ProgressStepsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/progress-steps/linear-steps',
-    renderer: (params = {}): JSX.Element => <LinearStepsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <LinearStepsView {...params} />,
   },
   {
     path: '/blocks/progress-steps/with-numbers-only',
-    renderer: (params = {}): JSX.Element => <WithNumbersOnlyView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithNumbersOnlyView {...params} />,
   },
   {
     path: '/blocks/progress-steps/vertical-stepper',
-    renderer: (params = {}): JSX.Element => <VerticalStepperView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <VerticalStepperView {...params} />,
   },
 ];
 

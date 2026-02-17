@@ -434,7 +434,7 @@ const countries = [
   { code: 'ZW', label: 'Zimbabwe', phone: '263' },
 ];
 
-const Shipping = (): JSX.Element => {
+const Shipping = (): React.JSX.Element => {
   return (
     <Box>
       <form>

@@ -36,7 +36,7 @@ const mock = [
   },
 ];
 
-const Orders = (): JSX.Element => {
+const Orders = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box>

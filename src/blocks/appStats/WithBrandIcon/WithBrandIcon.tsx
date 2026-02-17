@@ -90,7 +90,7 @@ const mock = [
   },
 ];
 
-const WithBrandIcon = (): JSX.Element => {
+const WithBrandIcon = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box bgcolor={'alternate.main'}>

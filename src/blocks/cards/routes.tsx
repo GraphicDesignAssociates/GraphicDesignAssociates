@@ -11,23 +11,23 @@ import {
 const routes = [
   {
     path: '/blocks/cards',
-    renderer: (params = {}): JSX.Element => <CardsIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <CardsIndexView {...params} />,
   },
   {
     path: '/blocks/cards/card-with-color-accent',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <CardWithColorAccentView {...params} />
     ),
   },
   {
     path: '/blocks/cards/card-with-checkboxes',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <CardWithCheckboxesView {...params} />
     ),
   },
   {
     path: '/blocks/cards/card-with-add-button',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <CardWithAddButtonView {...params} />
     ),
   },

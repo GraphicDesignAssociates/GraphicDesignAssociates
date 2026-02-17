@@ -99,7 +99,7 @@ const mock = [
   },
 ];
 
-const FeaturesWithSimpleLeftAlignedIcons = (): JSX.Element => {
+const FeaturesWithSimpleLeftAlignedIcons = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

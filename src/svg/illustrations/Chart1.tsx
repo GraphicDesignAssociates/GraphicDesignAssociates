@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 const Chart1 = ({
   width = 254,
   height = 348,
-}: IllustrationProps): JSX.Element => {
+}: IllustrationProps): React.JSX.Element => {
   const theme = useTheme();
   const colorPrimaryMain = theme.palette.primary.main;
   const colorPrimaryDark = theme.palette.primary.dark;

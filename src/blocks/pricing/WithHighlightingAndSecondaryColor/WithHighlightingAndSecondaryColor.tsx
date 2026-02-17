@@ -47,7 +47,7 @@ const mock = [
   },
 ];
 
-const WithHighlightingAndSecondaryColor = (): JSX.Element => {
+const WithHighlightingAndSecondaryColor = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

@@ -11,21 +11,21 @@ import {
 const routes = [
   {
     path: '/blocks/tables',
-    renderer: (params = {}): JSX.Element => <TablesIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <TablesIndexView {...params} />,
   },
   {
     path: '/blocks/tables/with-avatars-and-multiline-content',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithAvatarsAndMultilineContentView {...params} />
     ),
   },
   {
     path: '/blocks/tables/simple-striped',
-    renderer: (params = {}): JSX.Element => <SimpleStripedView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <SimpleStripedView {...params} />,
   },
   {
     path: '/blocks/tables/simple',
-    renderer: (params = {}): JSX.Element => <SimpleView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <SimpleView {...params} />,
   },
 ];
 

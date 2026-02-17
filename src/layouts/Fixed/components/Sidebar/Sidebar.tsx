@@ -14,7 +14,7 @@ interface Props {
   }>;
 }
 
-const Sidebar = ({ pages, open, variant, onClose }: Props): JSX.Element => {
+const Sidebar = ({ pages, open, variant, onClose }: Props): React.JSX.Element => {
   return (
     <Drawer
       anchor="left"

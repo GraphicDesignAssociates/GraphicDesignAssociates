@@ -12,7 +12,7 @@ import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
 
 import Container from 'components/Container';
 
-const FeaturesWithMobileScreenshot = (): JSX.Element => {
+const FeaturesWithMobileScreenshot = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

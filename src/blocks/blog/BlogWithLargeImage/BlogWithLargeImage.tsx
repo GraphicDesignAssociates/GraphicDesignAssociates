@@ -38,7 +38,7 @@ const mock = [
   },
 ];
 
-const BlogWithLargeImage = (): JSX.Element => {
+const BlogWithLargeImage = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

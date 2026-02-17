@@ -121,7 +121,7 @@ const mock = [
   },
 ];
 
-const WithSimpleBorderedCards = (): JSX.Element => {
+const WithSimpleBorderedCards = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

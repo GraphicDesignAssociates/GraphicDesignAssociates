@@ -30,7 +30,7 @@ const mock = [
   },
 ];
 
-const WithCountUpNumbersAndCoverImage = (): JSX.Element => {
+const WithCountUpNumbersAndCoverImage = (): React.JSX.Element => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,

@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 const CreditCards2 = ({
   width = 130,
   height = 71,
-}: IllustrationProps): JSX.Element => {
+}: IllustrationProps): React.JSX.Element => {
   const theme = useTheme();
   const colorPrimaryMain = theme.palette.primary.main;
   return (

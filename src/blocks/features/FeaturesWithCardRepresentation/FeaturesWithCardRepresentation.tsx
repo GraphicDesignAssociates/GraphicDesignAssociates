@@ -143,7 +143,7 @@ const mock = [
   },
 ];
 
-const FeaturesWithCardRepresentation = (): JSX.Element => {
+const FeaturesWithCardRepresentation = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box bgcolor={'alternate.main'}>

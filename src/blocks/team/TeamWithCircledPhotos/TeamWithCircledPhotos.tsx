@@ -34,7 +34,7 @@ const mock = [
   },
 ];
 
-const TeamWithCircledPhotos = (): JSX.Element => {
+const TeamWithCircledPhotos = (): React.JSX.Element => {
   return (
     <Container>
       <Box>

@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 // Use basename for GitHub Pages subdirectory deployment
 const basename = import.meta.env.BASE_URL;
 
-const App = (): JSX.Element => {
+const App = (): React.JSX.Element => {
   return (
     <Page>
       <BrowserRouter basename={basename}>

@@ -45,7 +45,7 @@ const mock = [
   },
 ];
 
-const WithSimpleCards = (): JSX.Element => {
+const WithSimpleCards = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

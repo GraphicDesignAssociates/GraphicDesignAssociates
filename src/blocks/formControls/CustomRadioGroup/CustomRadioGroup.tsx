@@ -57,7 +57,7 @@ const mock = [
   },
 ];
 
-const CustomRadioGroup = (): JSX.Element => {
+const CustomRadioGroup = (): React.JSX.Element => {
   return (
     <Box bgcolor={'alternate.main'}>
       <Container maxWidth={800}>

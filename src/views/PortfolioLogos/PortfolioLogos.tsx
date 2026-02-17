@@ -102,7 +102,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioLogos = (): JSX.Element => {
+const PortfolioLogos = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Main>

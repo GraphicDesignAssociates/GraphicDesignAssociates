@@ -56,7 +56,7 @@ const mock = [
   },
 ];
 
-const SimpleStriped = (): JSX.Element => {
+const SimpleStriped = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

@@ -21,7 +21,7 @@ const NavItem = ({
   id,
   items,
   colorInvert = false,
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const theme = useTheme();
 
   let currentlyHovering = false;

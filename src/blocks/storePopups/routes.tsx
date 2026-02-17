@@ -10,19 +10,19 @@ import {
 const routes = [
   {
     path: '/blocks/store-popups',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <StorePopupsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/store-popups/popup-with-discount',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <PopupWithDiscountView {...params} />
     ),
   },
   {
     path: '/blocks/store-popups/popup-with-image',
-    renderer: (params = {}): JSX.Element => <PopupWithImageView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PopupWithImageView {...params} />,
   },
 ];
 

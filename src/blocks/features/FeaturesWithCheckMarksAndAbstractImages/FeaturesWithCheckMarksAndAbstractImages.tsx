@@ -11,7 +11,7 @@ import { useTheme } from '@mui/material/styles';
 
 import Container from 'components/Container';
 
-const FeaturesWithCheckMarksAndAbstractImages = (): JSX.Element => {
+const FeaturesWithCheckMarksAndAbstractImages = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

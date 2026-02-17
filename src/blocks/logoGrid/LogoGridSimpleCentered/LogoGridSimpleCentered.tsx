@@ -14,7 +14,7 @@ const mock = [
   'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
 ];
 
-const LogoGridSimpleCentered = (): JSX.Element => {
+const LogoGridSimpleCentered = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

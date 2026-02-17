@@ -7,7 +7,7 @@ import { FeedbackForm } from './components';
 
 import Container from 'components/Container';
 
-const ReviewDialog = (): JSX.Element => {
+const ReviewDialog = (): React.JSX.Element => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 

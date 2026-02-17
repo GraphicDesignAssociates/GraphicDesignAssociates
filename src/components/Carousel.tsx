@@ -29,7 +29,7 @@ const Carousel = ({
   pauseOnHover = true,
   fadeEdges = true,
   sx,
-}: CarouselProps): JSX.Element => {
+}: CarouselProps): React.JSX.Element => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [isDragging, setIsDragging] = useState(false);

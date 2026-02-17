@@ -56,7 +56,7 @@ const mock = [
   },
 ];
 
-const Simple = (): JSX.Element => {
+const Simple = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

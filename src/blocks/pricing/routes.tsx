@@ -15,47 +15,47 @@ import {
 const routes = [
   {
     path: '/blocks/pricing',
-    renderer: (params = {}): JSX.Element => <PricingIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <PricingIndexView {...params} />,
   },
   {
     path: '/blocks/pricing/with-highlighting-and-primary-color',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithHighlightingAndPrimaryColorView {...params} />
     ),
   },
   {
     path: '/blocks/pricing/with-two-column-and-mixed-height',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithTwoColumnAndMixedHeightView {...params} />
     ),
   },
   {
     path: '/blocks/pricing/with-simple-bordered-cards',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithSimpleBorderedCardsView {...params} />
     ),
   },
   {
     path: '/blocks/pricing/single-choice-option',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <SingleChoiceOptionView {...params} />
     ),
   },
   {
     path: '/blocks/pricing/with-highlighting-and-secondary-color',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithHighlightingAndSecondaryColorView {...params} />
     ),
   },
   {
     path: '/blocks/pricing/with-option-toggler-button',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithOptionTogglerButtonView {...params} />
     ),
   },
   {
     path: '/blocks/pricing/compare-table',
-    renderer: (params = {}): JSX.Element => <CompareTableView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <CompareTableView {...params} />,
   },
 ];
 

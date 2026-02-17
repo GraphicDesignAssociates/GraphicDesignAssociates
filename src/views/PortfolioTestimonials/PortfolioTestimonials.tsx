@@ -30,7 +30,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioTestimonials = (): JSX.Element => {
+const PortfolioTestimonials = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Main>

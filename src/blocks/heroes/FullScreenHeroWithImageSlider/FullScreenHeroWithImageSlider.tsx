@@ -6,7 +6,7 @@ import Container from 'components/Container';
 
 import { CtaSection, CoverSlider } from './components';
 
-const FullScreenHeroWithImageSlider = (): JSX.Element => {
+const FullScreenHeroWithImageSlider = (): React.JSX.Element => {
   return (
     <Box
       sx={{

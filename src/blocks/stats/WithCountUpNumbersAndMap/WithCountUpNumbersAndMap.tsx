@@ -27,10 +27,10 @@ const mock = [
   },
 ];
 
-const MapHero = (): JSX.Element => {
+const MapHero = (): React.JSX.Element => {
   const theme = useTheme();
 
-  const LeftSide = (): JSX.Element => {
+  const LeftSide = (): React.JSX.Element => {
     return (
       <Box>
         <Typography
@@ -69,7 +69,7 @@ const MapHero = (): JSX.Element => {
     );
   };
 
-  const RightSide = (): JSX.Element => {
+  const RightSide = (): React.JSX.Element => {
     return (
       <iframe
         width="100%"

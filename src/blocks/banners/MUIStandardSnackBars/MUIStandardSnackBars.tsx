@@ -13,7 +13,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   return <MuiAlert elevation={1} ref={ref} variant="filled" {...props} />;
 });
 
-const MUIStandardSnackBars = (): JSX.Element => {
+const MUIStandardSnackBars = (): React.JSX.Element => {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = (): void => {

@@ -34,7 +34,7 @@ const mock = [
   },
 ];
 
-const OneLineFeatureListWithCheckMarks = (): JSX.Element => {
+const OneLineFeatureListWithCheckMarks = (): React.JSX.Element => {
   return (
     <Container>
       <Box>

@@ -17,7 +17,7 @@ import { Hero, OverviewSection } from './components';
 
 import data from './data';
 
-const IndexView = (): JSX.Element => {
+const IndexView = (): React.JSX.Element => {
   const theme = useTheme();
   const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
     defaultMatches: true,
@@ -32,7 +32,7 @@ const IndexView = (): JSX.Element => {
 
   const scrollTo = (id): void => {
     setTimeout(
-      (): JSX.Element => {
+      (): React.JSX.Element => {
         const element: HTMLElement = document.querySelector(`#${id}`);
         if (!element) {
           return;

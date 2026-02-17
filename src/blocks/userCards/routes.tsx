@@ -11,21 +11,21 @@ import {
 const routes = [
   {
     path: '/blocks/user-cards',
-    renderer: (params = {}): JSX.Element => <UserCardsIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <UserCardsIndexView {...params} />,
   },
   {
     path: '/blocks/user-cards/user-card-grid',
-    renderer: (params = {}): JSX.Element => <UserCardGridView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <UserCardGridView {...params} />,
   },
   {
     path: '/blocks/user-cards/user-card-with-background',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <UserCardWithBackgroundView {...params} />
     ),
   },
   {
     path: '/blocks/user-cards/user-card-with-rating',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <UserCardWithRatingView {...params} />
     ),
   },

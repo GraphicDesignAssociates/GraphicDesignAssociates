@@ -9,13 +9,13 @@ import {
 const routes = [
   {
     path: '/blocks/store-navigation',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <StoreNavigationIndexView {...params} />
     ),
   },
   {
     path: '/blocks/store-navigation/nav-with-centered-search',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <NavWithCenteredSearchView {...params} />
     ),
   },

@@ -17,7 +17,7 @@ interface Props {
   [x: string]: any;
 }
 
-const Image = ({ src, imageProps = {}, style = {}, ...rest }: Props): JSX.Element => {
+const Image = ({ src, imageProps = {}, style = {}, ...rest }: Props): React.JSX.Element => {
   return (
     <Box
       className={'image'}

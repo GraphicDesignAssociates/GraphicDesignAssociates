@@ -10,7 +10,7 @@ import Link from '@mui/material/Link';
 
 import Container from 'components/Container';
 
-const SimpleSignInForm = (): JSX.Element => {
+const SimpleSignInForm = (): React.JSX.Element => {
   return (
     <Box bgcolor={'alternate.main'}>
       <Container maxWidth={800}>

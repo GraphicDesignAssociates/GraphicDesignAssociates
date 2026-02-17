@@ -47,7 +47,7 @@ const mock = [
   },
 ];
 
-const Hero = (): JSX.Element => {
+const Hero = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

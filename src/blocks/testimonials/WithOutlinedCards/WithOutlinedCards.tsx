@@ -38,7 +38,7 @@ const mock = [
   },
 ];
 
-const WithOutlinedCards = (): JSX.Element => {
+const WithOutlinedCards = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

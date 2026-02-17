@@ -14,39 +14,39 @@ import {
 const routes = [
   {
     path: '/blocks/stats',
-    renderer: (params = {}): JSX.Element => <StatsIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <StatsIndexView {...params} />,
   },
   {
     path: '/blocks/stats/with-count-up-numbers-and-cover-image',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithCountUpNumbersAndCoverImageView {...params} />
     ),
   },
   {
     path: '/blocks/stats/with-count-up-numbers-and-map',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithCountUpNumbersAndMapView {...params} />
     ),
   },
   {
     path: '/blocks/stats/stats-with-card',
-    renderer: (params = {}): JSX.Element => <StatsWithCardView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <StatsWithCardView {...params} />,
   },
   {
     path: '/blocks/stats/with-bordered-cards-and-brand-color',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithBorderedCardsAndBrandColorView {...params} />
     ),
   },
   {
     path: '/blocks/stats/with-abstract-visual-representation',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <WithAbstractVisualRepresentationView {...params} />
     ),
   },
   {
     path: '/blocks/stats/client-satisfaction',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ClientSatisfactionView {...params} />
     ),
   },

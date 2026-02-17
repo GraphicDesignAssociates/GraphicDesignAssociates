@@ -8,7 +8,7 @@ import Select from '@mui/material/Select';
 
 import Container from 'components/Container';
 
-const CustomSelect = (): JSX.Element => {
+const CustomSelect = (): React.JSX.Element => {
   const [brightness, setBrightness] = React.useState(10);
 
   const handleChange = (event) => {

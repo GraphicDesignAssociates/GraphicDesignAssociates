@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import Container from 'components/Container';
 
-const CtaWithAppStoreButtons = (): JSX.Element => {
+const CtaWithAppStoreButtons = (): React.JSX.Element => {
   return (
     <Container>
       <Box marginBottom={2}>

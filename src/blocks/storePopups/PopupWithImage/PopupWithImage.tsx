@@ -7,7 +7,7 @@ import { PopupBox } from './components';
 
 import Container from 'components/Container';
 
-const PopupWithImage = (): JSX.Element => {
+const PopupWithImage = (): React.JSX.Element => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 

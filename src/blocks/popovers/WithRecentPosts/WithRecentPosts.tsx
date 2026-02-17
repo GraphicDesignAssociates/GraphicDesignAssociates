@@ -149,7 +149,7 @@ const mock = [
   },
 ];
 
-const WithRecentPosts = (): JSX.Element => {
+const WithRecentPosts = (): React.JSX.Element => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);

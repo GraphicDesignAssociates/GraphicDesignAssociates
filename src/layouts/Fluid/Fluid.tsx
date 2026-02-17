@@ -24,7 +24,7 @@ const Fluid = ({
   children,
   colorInvert = false,
   bgcolor = 'alternate.main',
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
 

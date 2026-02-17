@@ -35,7 +35,7 @@ const mock = [
   },
 ];
 
-const WithBrandBgColor = (): JSX.Element => {
+const WithBrandBgColor = (): React.JSX.Element => {
   return (
     <Box bgcolor={'primary.main'}>
       <Container>

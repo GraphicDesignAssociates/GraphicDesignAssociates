@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import { assetPath } from 'src/utils/assetPath';
 
-const Footer = (): JSX.Element => {
+const Footer = (): React.JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
 

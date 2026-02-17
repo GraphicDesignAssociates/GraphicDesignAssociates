@@ -10,19 +10,19 @@ import {
 const routes = [
   {
     path: '/blocks/product-filters',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ProductFiltersIndexView {...params} />
     ),
   },
   {
     path: '/blocks/product-filters/filters-with-dropdown',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <FiltersWithDropdownView {...params} />
     ),
   },
   {
     path: '/blocks/product-filters/filters-with-sidebar',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <FiltersWithSidebarView {...params} />
     ),
   },

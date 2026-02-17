@@ -10,17 +10,17 @@ import {
 const routes = [
   {
     path: '/blocks/product-details',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ProductDetailsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/product-details/with-large-image',
-    renderer: (params = {}): JSX.Element => <WithLargeImageView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithLargeImageView {...params} />,
   },
   {
     path: '/blocks/product-details/with-image-grid',
-    renderer: (params = {}): JSX.Element => <WithImageGridView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithImageGridView {...params} />,
   },
 ];
 

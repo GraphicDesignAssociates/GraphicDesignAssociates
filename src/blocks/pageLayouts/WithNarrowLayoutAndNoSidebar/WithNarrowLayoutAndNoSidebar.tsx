@@ -7,7 +7,7 @@ import AppBar from '@mui/material/AppBar';
 import Container from 'components/Container';
 import { Topbar, Footer } from './components';
 
-const ChildMock = (): JSX.Element => {
+const ChildMock = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>
@@ -25,7 +25,7 @@ const ChildMock = (): JSX.Element => {
   );
 };
 
-const WithNarrowLayoutAndNoSidebar = (): JSX.Element => {
+const WithNarrowLayoutAndNoSidebar = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box>

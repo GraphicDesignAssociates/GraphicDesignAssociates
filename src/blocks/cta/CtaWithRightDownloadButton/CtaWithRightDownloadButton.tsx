@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 import Container from 'components/Container';
 
-const CtaWithRightDownloadButton = (): JSX.Element => {
+const CtaWithRightDownloadButton = (): React.JSX.Element => {
   return (
     <Container>
       <Box marginBottom={4}>

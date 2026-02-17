@@ -10,17 +10,17 @@ import {
 const routes = [
   {
     path: '/blocks/form-layouts',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <FormLayoutsIndexView {...params} />
     ),
   },
   {
     path: '/blocks/form-layouts/account',
-    renderer: (params = {}): JSX.Element => <AccountView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <AccountView {...params} />,
   },
   {
     path: '/blocks/form-layouts/contact',
-    renderer: (params = {}): JSX.Element => <ContactView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ContactView {...params} />,
   },
 ];
 

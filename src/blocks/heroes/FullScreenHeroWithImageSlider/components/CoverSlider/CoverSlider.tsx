@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 
-const CoverSlider = (): JSX.Element => {
+const CoverSlider = (): React.JSX.Element => {
   return (
     <Box
       sx={{

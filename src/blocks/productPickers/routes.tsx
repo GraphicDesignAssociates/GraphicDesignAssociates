@@ -11,21 +11,21 @@ import {
 const routes = [
   {
     path: '/blocks/product-pickers',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ProductPickersIndexView {...params} />
     ),
   },
   {
     path: '/blocks/product-pickers/color-picker',
-    renderer: (params = {}): JSX.Element => <ColorPickerView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ColorPickerView {...params} />,
   },
   {
     path: '/blocks/product-pickers/size-picker',
-    renderer: (params = {}): JSX.Element => <SizePickerView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <SizePickerView {...params} />,
   },
   {
     path: '/blocks/product-pickers/quantity-picker',
-    renderer: (params = {}): JSX.Element => <QuantityPickerView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <QuantityPickerView {...params} />,
   },
 ];
 

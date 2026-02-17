@@ -14,41 +14,41 @@ import {
 const routes = [
   {
     path: '/blocks/authentication',
-    renderer: (params = {}): JSX.Element => <AuthIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <AuthIndexView {...params} />,
   },
   {
     path: '/blocks/authentication/simple-sign-up-form',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <SimpleSignUpFormView {...params} />
     ),
   },
   {
     path: '/blocks/authentication/sign-up-form-with-cover-image',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <SignUpFormWithCoverImageView {...params} />
     ),
   },
   {
     path: '/blocks/authentication/simple-sign-in-form',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <SimpleSignInFormView {...params} />
     ),
   },
   {
     path: '/blocks/authentication/sign-in-form-with-cover-image',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <SignInFormWithCoverImageView {...params} />
     ),
   },
   {
     path: '/blocks/authentication/reset-password-simple-form',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ResetPasswordSimpleFormView {...params} />
     ),
   },
   {
     path: '/blocks/authentication/auth-form-with-dark-bg',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <AuthFormWithDarkBgView {...params} />
     ),
   },

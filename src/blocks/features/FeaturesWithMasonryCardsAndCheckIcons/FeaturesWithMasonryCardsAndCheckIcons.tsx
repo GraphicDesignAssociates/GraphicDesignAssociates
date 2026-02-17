@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Container from 'components/Container';
 import { FeatureList, MasonryCards } from './components';
 
-const FeaturesWithMasonryCardsAndCheckIcons = (): JSX.Element => {
+const FeaturesWithMasonryCardsAndCheckIcons = (): React.JSX.Element => {
   return (
     <Container>
       <Grid container spacing={4}>

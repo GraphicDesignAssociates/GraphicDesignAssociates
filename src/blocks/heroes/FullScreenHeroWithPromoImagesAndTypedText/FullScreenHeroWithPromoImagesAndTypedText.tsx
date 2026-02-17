@@ -76,7 +76,7 @@ const images = [
   },
 ];
 
-const FullScreenHeroWithPromoImagesAndTypedText = (): JSX.Element => {
+const FullScreenHeroWithPromoImagesAndTypedText = (): React.JSX.Element => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,

@@ -46,7 +46,7 @@ const mock = [
   },
 ];
 
-const VerticallyAlignedBlogCardsWithShapedImage = (): JSX.Element => {
+const VerticallyAlignedBlogCardsWithShapedImage = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Container>

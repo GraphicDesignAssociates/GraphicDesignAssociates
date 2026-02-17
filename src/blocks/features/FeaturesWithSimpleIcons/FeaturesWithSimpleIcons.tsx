@@ -100,7 +100,7 @@ const mock = [
   },
 ];
 
-const FeaturesWithSimpleIcons = (): JSX.Element => {
+const FeaturesWithSimpleIcons = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

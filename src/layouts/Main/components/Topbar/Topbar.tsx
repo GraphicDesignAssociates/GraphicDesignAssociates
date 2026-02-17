@@ -24,7 +24,7 @@ const Topbar = ({
   onSidebarOpen,
   pages,
   colorInvert = false,
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
   const {

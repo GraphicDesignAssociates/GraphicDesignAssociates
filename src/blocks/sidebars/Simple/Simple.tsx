@@ -8,7 +8,7 @@ import AppBar from '@mui/material/AppBar';
 import Container from 'components/Container';
 import { Topbar, Sidebar, Footer } from './components';
 
-const ChildMock = (): JSX.Element => {
+const ChildMock = (): React.JSX.Element => {
   return (
     <Box p={4}>
       <Box
@@ -22,7 +22,7 @@ const ChildMock = (): JSX.Element => {
   );
 };
 
-const Simple = (): JSX.Element => {
+const Simple = (): React.JSX.Element => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,

@@ -11,21 +11,21 @@ import {
 const routes = [
   {
     path: '/blocks/lists',
-    renderer: (params = {}): JSX.Element => <ListsIndexView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <ListsIndexView {...params} />,
   },
   {
     path: '/blocks/lists/list-with-nested-item',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ListWithNestedItemView {...params} />
     ),
   },
   {
     path: '/blocks/lists/with-avatars',
-    renderer: (params = {}): JSX.Element => <WithAvatarsView {...params} />,
+    renderer: (params = {}): React.JSX.Element => <WithAvatarsView {...params} />,
   },
   {
     path: '/blocks/lists/list-with-vertical-line',
-    renderer: (params = {}): JSX.Element => (
+    renderer: (params = {}): React.JSX.Element => (
       <ListWithVerticalLineView {...params} />
     ),
   },

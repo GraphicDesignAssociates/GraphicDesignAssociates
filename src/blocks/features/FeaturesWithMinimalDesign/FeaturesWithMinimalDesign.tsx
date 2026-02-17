@@ -101,7 +101,7 @@ const mock = [
   },
 ];
 
-const FeaturesWithMinimalDesign = (): JSX.Element => {
+const FeaturesWithMinimalDesign = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

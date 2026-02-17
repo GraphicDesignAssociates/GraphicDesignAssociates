@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 
 import Container from 'components/Container';
 
-const SimpleHeroWithImageAndCtaButtons = (): JSX.Element => {
+const SimpleHeroWithImageAndCtaButtons = (): React.JSX.Element => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,

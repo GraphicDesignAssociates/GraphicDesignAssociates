@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import Container from 'components/Container';
 
-const EmptyCart = (): JSX.Element => {
+const EmptyCart = (): React.JSX.Element => {
   return (
     <Container maxWidth={600}>
       <Box

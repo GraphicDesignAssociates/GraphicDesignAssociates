@@ -8,7 +8,7 @@ import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
 
 import Container from 'components/Container';
 
-const Hero = (): JSX.Element => {
+const Hero = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box

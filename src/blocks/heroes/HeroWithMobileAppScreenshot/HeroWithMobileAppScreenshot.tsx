@@ -9,7 +9,7 @@ import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
 
 import Container from 'components/Container';
 
-const HeroWithMobileAppScreenshot = (): JSX.Element => {
+const HeroWithMobileAppScreenshot = (): React.JSX.Element => {
   const theme = useTheme();
 
   return (

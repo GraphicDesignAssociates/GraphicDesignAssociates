@@ -330,7 +330,7 @@ const mock = [
   },
 ];
 
-const SidebarNav = (): JSX.Element => {
+const SidebarNav = (): React.JSX.Element => {
   return (
     <Box padding={2}>
       {mock.map((item, i) => (

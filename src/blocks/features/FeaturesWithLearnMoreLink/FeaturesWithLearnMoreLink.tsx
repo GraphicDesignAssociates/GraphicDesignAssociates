@@ -29,7 +29,7 @@ const mock = [
   },
 ];
 
-const FeaturesWithLearnMoreLink = (): JSX.Element => {
+const FeaturesWithLearnMoreLink = (): React.JSX.Element => {
   return (
     <Container>
       <Grid container spacing={4}>

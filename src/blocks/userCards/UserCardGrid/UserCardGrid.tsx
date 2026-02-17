@@ -37,7 +37,7 @@ const mock = [
   },
 ];
 
-const UserCardGrid = (): JSX.Element => {
+const UserCardGrid = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Box bgcolor={'alternate.main'}>

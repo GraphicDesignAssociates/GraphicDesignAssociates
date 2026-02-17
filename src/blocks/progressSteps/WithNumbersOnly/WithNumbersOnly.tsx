@@ -36,7 +36,7 @@ const steps = [
   },
 ];
 
-const WithNumbersOnly = (): JSX.Element => {
+const WithNumbersOnly = (): React.JSX.Element => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const [completed, setCompleted] = React.useState({});

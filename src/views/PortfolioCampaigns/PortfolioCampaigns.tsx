@@ -66,7 +66,7 @@ const cardBlocks = [
       ),
     ];
 
-const PortfolioCampaigns = (): JSX.Element => {
+const PortfolioCampaigns = (): React.JSX.Element => {
   const theme = useTheme();
   return (
     <Main>

@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const Contact = (): JSX.Element => {
+const Contact = (): React.JSX.Element => {
   return (
     <Box>
       <Typography fontWeight={700} variant={'h3'} gutterBottom align={'center'}>

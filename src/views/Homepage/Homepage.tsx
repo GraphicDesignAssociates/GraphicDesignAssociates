@@ -14,7 +14,7 @@ import { CardBlock } from 'views/PortfolioGrid/components/Main/Main';
 import { Hero } from 'views/ContactPage/components';
 import { assetPath } from 'src/utils/assetPath';
 
-const Homepage = (): JSX.Element => {
+const Homepage = (): React.JSX.Element => {
   useEffect(() => {
     const jarallaxInit = async () => {
       const jarallaxElems = document.querySelectorAll('.jarallax');
