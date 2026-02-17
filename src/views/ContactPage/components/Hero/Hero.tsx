@@ -153,7 +153,11 @@ const Hero = (): React.JSX.Element => {
                           primary={item.label}
                           secondary={
                             item.type == 'email' 
-                              ? <a href={`mailto:${item.value}`}>{item.value}</a>
+                              ? <a 
+                                  href={`mailto:${item.value}`} 
+                                  style={{ color: theme.palette.text.primary }}>
+                                    {item.value}
+                                </a>
                               : item.value
                             }
                         />
